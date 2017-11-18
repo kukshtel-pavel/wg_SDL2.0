@@ -2,7 +2,7 @@ language: cpp
 
 compiler:
   - gcc
-  
+  - clang
   
 sudo: required
 
@@ -16,8 +16,8 @@ install:
   
   
 script:
- #task 2 SDL Dynamic
-  - cd 
+ #task SDL Dynamic
+
   - 'if [ ! -d "./build" ];
         then mkdir build;
      fi'
@@ -25,4 +25,3 @@ script:
   - cmake ..
   - make
   - ./SDL-Dynamic
- 
